@@ -1,0 +1,4 @@
+.btn.s{padding:11px 20px;font-size:16px}button.btn{font:inherit;font-weight:700;font-size:16px;color:var(--ink);background:transparent;cursor:pointer}
+.btn{display:inline-block;text-decoration:none;padding:13px 24px;border-radius:99px;font-weight:700;border:1px solid var(--line);transition:transform .2s,box-shadow .2s}
+.btn.p{background:linear-gradient(100deg,var(--v),var(--c));color:#06070f;border:0;box-shadow:0 0 30px rgba(139,92,246,.45)}
+.btn:hover,.btn:focus-visible{transform:translateY(-3px);box-shadow:0 0 38px rgba(34,211,238,.5);outline:0}

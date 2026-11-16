@@ -1,0 +1,55 @@
+form{
+    display:grid;
+    gap:14px;
+    max-width:620px;
+    padding:28px;
+    border:1px solid var(--line);
+    border-radius:20px;
+    background:rgba(14,16,32,.7);
+    backdrop-filter:blur(8px)
+}
+
+label{
+    display:grid;
+    gap:6px;
+    font-size:15px;
+    color:var(--mute)
+}
+
+input,textarea{
+    font:inherit;
+    color:var(--ink);
+    background:#080918;
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:12px 14px
+}
+
+input:focus,textarea:focus{
+    outline:2px solid var(--v);
+    border-color:transparent
+}
+
+.links{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    margin-top:28px;
+    color:var(--mute)
+}
+
+.links a:hover{
+    color:var(--c)
+}
+
+form{
+    margin:0 auto
+}
+
+.links{
+    justify-content:center
+}
+
+#m{
+    resize:none;
+}

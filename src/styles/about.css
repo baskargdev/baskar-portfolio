@@ -1,0 +1,23 @@
+.lang{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.chip{font-size:13px;color:var(--c);border:1px solid rgba(34,211,238,.35);padding:3px 11px;border-radius:99px}
+.about{display:grid;gap:34px;grid-template-columns:minmax(180px,240px) 1fr;align-items:start}.abt{display:grid;gap:30px;grid-template-columns:1.2fr 1fr}.afig{margin:0;border-radius:24px;padding:4px;background:linear-gradient(150deg,var(--v),var(--c));box-shadow:0 0 60px rgba(139,92,246,.35)}.afig img{display:block;width:100%;height:auto;border-radius:20px}
+.about p{color:var(--mute);margin:0 0 16px}
+.facts{display:grid;gap:14px}
+.fact{border-left:3px solid var(--v);padding:4px 0 4px 16px}
+.fact b{display:block}.fact span{color:var(--mute);font-size:15px}
+@media(max-width:1000px){.abt{grid-template-columns:1fr}}
+@media(max-width:760px){.about,.abt{grid-template-columns:1fr}.afig{max-width:230px}}
+.about{grid-template-columns:1fr;justify-items:center;text-align:center}
+.abt{grid-template-columns:1fr;max-width:820px;width:100%;justify-items:center}
+.about p{margin-left:auto;margin-right:auto;max-width:62ch}
+.lang{justify-content:center}
+.facts{grid-template-columns:repeat(auto-fit,minmax(230px,1fr));width:100%;gap:18px}
+.fact{border-left:0;border-top:3px solid var(--v);padding:14px 6px 0;text-align:center}
+.afig{width:200px;max-width:100%}
+@media(min-width:1001px){.abt{grid-template-columns:1fr 1fr;max-width:1000px;gap:44px;align-items:start}.facts{grid-template-columns:1fr}}
+@media(min-width:1001px){.about{grid-template-columns:250px 1fr;justify-items:stretch;align-items:center;gap:52px;max-width:1040px;margin:0 auto}.afig{width:250px;justify-self:center}.abt{grid-template-columns:1fr;max-width:none;gap:26px}.facts{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1001px){.abt{display:contents}.about{grid-template-areas:"img txt" "facts facts";row-gap:44px;max-width:1100px}.afig{grid-area:img}.abt>div:first-child{grid-area:txt}.facts{grid-area:facts;grid-template-columns:repeat(4,1fr);gap:20px}}
+@media(min-width:1001px){.facts{grid-template-columns:1fr;max-width:760px;justify-self:center;gap:16px}}
+.eh{grid-column:1/-1;font-size:clamp(1.5rem,4.5vw,2.2rem);text-align:center;margin:0 0 6px}
+.eh+.fact{border-top:0}
+@media(max-width:760px){.afig{width:220px}}
